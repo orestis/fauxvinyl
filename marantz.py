@@ -103,4 +103,4 @@ def volume(vol):
 
 power(True) 
 select_input("CD")
-volume(40)
+volume(35)

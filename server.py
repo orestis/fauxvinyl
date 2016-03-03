@@ -4,14 +4,15 @@ from spotify import Spotify, Album
 SPOTIFY = Spotify()
 
 
-album_uris = open("albums.txt").read().splitlines()
-albums = []
-
-for uri in album_uris:
-    albums.append(Album(uri))
 
 @route('/')
 def index():
+    album_uris = open("albums.txt").read().splitlines()
+    albums = []
+
+    for uri in album_uris:
+        albums.append(Album(uri))
+
     return template("index", albums=albums, message=None)
 
 @route('/play/<uri>')

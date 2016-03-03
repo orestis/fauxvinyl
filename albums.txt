@@ -13,6 +13,11 @@ spotify:album:3bzgbgiytguTDnwzflAZr2
 spotify:album:0JwHz5SSvpYWuuCNbtYZoV
 spotify:album:3i3imP9g6gCc6VzeeyduXZ
 spotify:album:5WZFtmADuJUZPtt0NER0Qi
-spotify:album:5x4f3Q9N93as7xLCxIMkDK
 spotify:album:1vWVHhniWzqyNC0UzDDGs4
-spotify:album:21uiZGwCJ3Dn0EBUbZWsqY
+spotify:album:4KdEMeJZeYMVDoEvJSnwuj
+spotify:album:65wSshD8gShczUu9r9aTsN
+spotify:album:32HC8qHKQb29YZnN71rvHW
+spotify:album:1weenld61qoidwYuZ1GESA
+spotify:album:726JEliZdlQqeD7T79M9ee
+spotify:album:2ezKcRnkXru0lf0ZBstlAq
+spotify:album:6MqUvJry4Z87cCWebJmzcu
