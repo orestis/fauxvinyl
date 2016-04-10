@@ -33,7 +33,7 @@
 </style>
 <script src="/static/spotify-web-api.js"></script>
 <script>
-function getAlbumNode(album_info) {
+function getAlbumNode(album_info, uri) {
     var artists = [];
     for (var i=0;i<album_info.artists.length;i++) {
         artists.push(album_info.artists[i].name);
@@ -52,7 +52,7 @@ function getAlbumNode(album_info) {
     for (var i=0;i<album_info.images.length;i++) {
         var img = album_info.images[i];
         console.log(img);
-        if (img.height > 100 && img.height < 500) {
+        if (img.height > 500) {
             image = img.url;
         }
     }
@@ -78,7 +78,7 @@ function getAlbumNode(album_info) {
 % end
 <ul class="album-list">
 % for album in albums:
-<li><a href="/play/{{album.uri}}" class="js-spotify-album" data-id="{{album.id}}">{{album.uri}}</a></li>
+<li><a href="{{album.uri}}" class="js-spotify-album" data-id="{{album.id}}">{{album.uri}}</a></li>
 % end
 </ul>
 <script>
@@ -96,7 +96,7 @@ for (var i=0;i<albums.length;i++) {
     var el = albums[i];
     var uri = el.getAttribute("data-id");
     spotifyApi.getAlbum(uri).then(function(data) {
-        this.innerHTML = getAlbumNode(data);
+        this.innerHTML = getAlbumNode(data, uri);
         console.log('Album information', data);
     }.bind(el), function(err) {
         console.error(err);

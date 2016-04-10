@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from bottle import route, run, template, static_file, redirect
 from spotify import Spotify, Album
 

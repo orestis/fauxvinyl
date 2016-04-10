@@ -1,3 +1,15 @@
+spotify:album:7xg7u99lilTCPbaRfnYuy6
+spotify:album:7rShDcOhzRIRNAowXWCxbA
+spotify:album:7f1aXd7Gd5H9IqFu36zw6m
+spotify:album:4ETVvsILHTLUHGYe3SSpgu
+spotify:album:2ULhVPvdhT7RREnqRWM06G
+spotify:album:6zK7GV2JCqLknAdTeIhooB
+spotify:album:5XWRJhJ3Uc5ndutOMtjSkf
+spotify:album:4TcCL29jgD69v38woQX85i
+spotify:album:5C1NUv7hNWS6n0GBtLetKM
+spotify:album:17gEubRfhqZEFoYEnHVV5H
+spotify:album:2Pqkn9Dq2DFtdfkKAeqgMd
+spotify:album:0PYyrqs9NXtxPhf0CZkq2L
 spotify:album:5uLfogUTD4gfj2md4mrJwv
 spotify:album:6fQElzBNTiEMGdIeY0hy5l
 spotify:album:4R7TQJ3SZGpbTV8kSq6POA
@@ -21,3 +33,9 @@ spotify:album:1weenld61qoidwYuZ1GESA
 spotify:album:726JEliZdlQqeD7T79M9ee
 spotify:album:2ezKcRnkXru0lf0ZBstlAq
 spotify:album:6MqUvJry4Z87cCWebJmzcu
+spotify:album:1bDbVwrKAXsEWBV1Ukdxzk
+spotify:album:6fVXVXix4ssHHDSAqvnORO
+spotify:album:3cPaunRr654a7i6nFA0qSK
+spotify:album:4ayqHevjwpx48tY0yu0M7m
+spotify:album:1cb1p1IcJFILv3nPaEOYDi
+spotify:album:1UIkSuWY7ubgzMTc8udf3W
