@@ -43,7 +43,7 @@ plex_commands = {
     DOWN: "Input.Down",
     LEFT: "Input.Left",
     RIGHT: "Input.Right",
-    CENTER: "Input.Select",
+    D: "Input.Select",
     PLAY: ("Player.PlayPause", {"playerid":1}),
     PAUSE: ("Player.PlayPause", {"playerid":1}),
     STOP: ("Player.Stop", {"playerid":1}),

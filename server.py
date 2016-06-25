@@ -1,19 +1,23 @@
 #!/usr/bin/python
+import sys
 
 from bottle import route, run, template, static_file, redirect
 from spotify import Spotify, Album
 
 SPOTIFY = Spotify()
 
-
+ALBUMS = "albums.txt"
+if len(sys.argv) > 1:
+    ALBUMS = sys.argv[1].strip()
 
 @route('/')
 def index():
-    album_uris = open("albums.txt").read().splitlines()
+    album_uris = open(ALBUMS).read().splitlines()
     albums = []
 
     for uri in album_uris:
-        albums.append(Album(uri))
+        if uri.strip():
+            albums.append(Album(uri))
 
     return template("index", albums=albums, message=None)
 

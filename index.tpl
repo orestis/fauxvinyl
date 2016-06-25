@@ -78,17 +78,11 @@ function getAlbumNode(album_info, uri) {
 % end
 <ul class="album-list">
 % for album in albums:
-<li><a href="{{album.uri}}" class="js-spotify-album" data-id="{{album.id}}">{{album.uri}}</a></li>
+<li><a href="/play/{{album.uri}}" class="js-spotify-album" data-id="{{album.id}}">{{album.uri}}</a></li>
 % end
 </ul>
 <script>
 var spotifyApi = new SpotifyWebApi();
-spotifyApi.getAlbums(['5U4W9E5WsYb2jUQWePT8Xm', '3KyVcddATClQKIdtaap4bV'])
-  .then(function(data) {
-    console.log('Albums information', data);
-  }, function(err) {
-    console.error(err);
-  });
 
 var uris = [];
 var albums = document.getElementsByClassName('js-spotify-album');
