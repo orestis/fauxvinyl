@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90B54F171D1EFB1600D0CE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B54F161D1EFB1600D0CE7C /* main.m */; };
+		90B54F1D1D1F066C00D0CE7C /* OMBulkWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B54F1C1D1F066C00D0CE7C /* OMBulkWriter.m */; };
+		90B54F1E1D1F0C4500D0CE7C /* NFCTagWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECE9B01C9D85F8004BD9A3 /* NFCTagWrapper.m */; };
 		90ECE9921C9C5FCC004BD9A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECE9911C9C5FCC004BD9A3 /* AppDelegate.m */; };
 		90ECE9951C9C5FCC004BD9A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECE9941C9C5FCC004BD9A3 /* main.m */; };
 		90ECE9971C9C5FCC004BD9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ECE9961C9C5FCC004BD9A3 /* Assets.xcassets */; };
@@ -22,7 +25,23 @@
 		90ECE9CB1C9ED1F5004BD9A3 /* NFCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECE9B31C9DDDF7004BD9A3 /* NFCListener.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		90B54F121D1EFB1600D0CE7C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		90B54F141D1EFB1600D0CE7C /* BulkAlbums */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BulkAlbums; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B54F161D1EFB1600D0CE7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90B54F1B1D1F066C00D0CE7C /* OMBulkWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMBulkWriter.h; sourceTree = "<group>"; };
+		90B54F1C1D1F066C00D0CE7C /* OMBulkWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMBulkWriter.m; sourceTree = "<group>"; };
 		90ECE98D1C9C5FCC004BD9A3 /* NFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90ECE9901C9C5FCC004BD9A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90ECE9911C9C5FCC004BD9A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		90B54F111D1EFB1600D0CE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90ECE98A1C9C5FCC004BD9A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,12 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90B54F151D1EFB1600D0CE7C /* BulkAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				90B54F161D1EFB1600D0CE7C /* main.m */,
+			);
+			path = BulkAlbums;
+			sourceTree = "<group>";
+		};
 		90ECE9841C9C5FCC004BD9A3 = {
 			isa = PBXGroup;
 			children = (
 				90ECE9A11C9C615E004BD9A3 /* CryptoTokenKit.framework */,
 				90ECE98F1C9C5FCC004BD9A3 /* NFC */,
 				90ECE9BB1C9ED0FE004BD9A3 /* NFCListener */,
+				90B54F151D1EFB1600D0CE7C /* BulkAlbums */,
 				90ECE98E1C9C5FCC004BD9A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +119,7 @@
 			children = (
 				90ECE98D1C9C5FCC004BD9A3 /* NFC.app */,
 				90ECE9BA1C9ED0FE004BD9A3 /* NFCListener.app */,
+				90B54F141D1EFB1600D0CE7C /* BulkAlbums */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +141,8 @@
 				90ECE9AC1C9D7A85004BD9A3 /* NFCExplorer.xib */,
 				90ECE9AF1C9D85F8004BD9A3 /* NFCTagWrapper.h */,
 				90ECE9B01C9D85F8004BD9A3 /* NFCTagWrapper.m */,
+				90B54F1B1D1F066C00D0CE7C /* OMBulkWriter.h */,
+				90B54F1C1D1F066C00D0CE7C /* OMBulkWriter.m */,
 			);
 			path = NFC;
 			sourceTree = "<group>";
@@ -143,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		90B54F131D1EFB1600D0CE7C /* BulkAlbums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90B54F1A1D1EFB1600D0CE7C /* Build configuration list for PBXNativeTarget "BulkAlbums" */;
+			buildPhases = (
+				90B54F101D1EFB1600D0CE7C /* Sources */,
+				90B54F111D1EFB1600D0CE7C /* Frameworks */,
+				90B54F121D1EFB1600D0CE7C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BulkAlbums;
+			productName = BulkAlbums;
+			productReference = 90B54F141D1EFB1600D0CE7C /* BulkAlbums */;
+			productType = "com.apple.product-type.tool";
+		};
 		90ECE98C1C9C5FCC004BD9A3 /* NFC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90ECE99E1C9C5FCC004BD9A3 /* Build configuration list for PBXNativeTarget "NFC" */;
@@ -186,6 +241,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Orestis Markou";
 				TargetAttributes = {
+					90B54F131D1EFB1600D0CE7C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					90ECE98C1C9C5FCC004BD9A3 = {
 						CreatedOnToolsVersion = 7.2.1;
 						SystemCapabilities = {
@@ -214,6 +272,7 @@
 			targets = (
 				90ECE98C1C9C5FCC004BD9A3 /* NFC */,
 				90ECE9B91C9ED0FE004BD9A3 /* NFCListener */,
+				90B54F131D1EFB1600D0CE7C /* BulkAlbums */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +300,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		90B54F101D1EFB1600D0CE7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B54F1D1D1F066C00D0CE7C /* OMBulkWriter.m in Sources */,
+				90B54F1E1D1F0C4500D0CE7C /* NFCTagWrapper.m in Sources */,
+				90B54F171D1EFB1600D0CE7C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90ECE9891C9C5FCC004BD9A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +353,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		90B54F181D1EFB1600D0CE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = NFC/NFC.entitlements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		90B54F191D1EFB1600D0CE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = NFC/NFC.entitlements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		90ECE99C1C9C5FCC004BD9A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +507,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		90B54F1A1D1EFB1600D0CE7C /* Build configuration list for PBXNativeTarget "BulkAlbums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B54F181D1EFB1600D0CE7C /* Debug */,
+				90B54F191D1EFB1600D0CE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		90ECE9881C9C5FCC004BD9A3 /* Build configuration list for PBXProject "NFC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -436,6 +531,7 @@
 				90ECE9A01C9C5FCC004BD9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90ECE9C81C9ED0FE004BD9A3 /* Build configuration list for PBXNativeTarget "NFCListener" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +540,7 @@
 				90ECE9CA1C9ED0FE004BD9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

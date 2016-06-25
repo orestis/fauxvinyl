@@ -20,6 +20,9 @@ typedef id (^APDUReplyBlock)(NSData * _Nullable , UInt16 , NSError * _Nullable )
 
 @end
 
+#define NSLog(...)
+
+
 @implementation NFCTagWrapper {
 
 }

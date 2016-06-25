@@ -14,12 +14,6 @@
 
 @end
 
-@interface NFCController : NSObject
-
-@property (readonly) BOOL ready;
-@property id<NFCControllerDelegate> delegate;
-
-- (void)writeDataToNextCard:(NSData*)data;
 
 
 
