@@ -217,7 +217,7 @@ typedef id (^APDUReplyBlock)(NSData * _Nullable , UInt16 , NSError * _Nullable )
     NSData* d = [self syncReadAllData];
     UInt8 *bytes = (UInt8*)[d bytes];
     // header is:
-    // 0x32 0x10 RESERVED LENGTH
+    // 0x46 0x56 [RESERVED] [LENGTH]
     if (!(bytes[0] == 0x46 && bytes[1] == 0x56)) {
         NSLog(@"invalid header");
         return nil;
